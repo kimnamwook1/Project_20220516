@@ -1,30 +1,24 @@
-#include "iostream"
-
-class AActor
-{
-
-};
-
-class Apple : AActor// : 뒤에는 부모클래스가 나와야함 
+#include <iostream>
+#include "Wall.h"
+#include "Player.h"
+#include "Floor.h"
+#include "Goal.h"
+#include "Collide.h"
+#include "Vector2D.h"
+ 
+class A
 {
 public:
-	int Shape = 0;
-	//0 : circle
-	//1 : Rectangle
-	//2 : Triangle
-	int Color = 0;
-	int Material = 0;
-	int Type = 0;
-	int Smell = 0;
-	int Taste = 0;
-	float Weight = 0;
-	float Size = 0; 
-
+	 A() {}
+	~ A() {} // UE에서는 소멸자 안 만듦. 엔진이 알아서 메모리 관리 해줌.
 };
 
 int main() 
 {
-	Apple 남욱이사과; // 남욱이 사과 -> Weight = 10; : 남욱이 사과의 메모리 중 Weight에 10을 넣을 거에요
+	AActor* MyActor = new AActor();
+
+	delete MyActor;
+	MyActor = nullptr;
 
 	return 0;
 }
