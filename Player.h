@@ -5,6 +5,9 @@
 class Player: public AActor
 {
 public:
+	Player();
+	virtual ~Player();
+
 
 	void Move(int KeyCode);
 };

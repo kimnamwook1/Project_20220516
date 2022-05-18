@@ -5,13 +5,7 @@
 #include "Goal.h"
 #include "Collide.h"
 #include "Vector2D.h"
- 
-class A
-{
-public:
-	 A() {}
-	~ A() {} // UE에서는 소멸자 안 만듦. 엔진이 알아서 메모리 관리 해줌.
-};
+#include "Map.h"
 
 int main() 
 {

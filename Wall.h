@@ -5,6 +5,9 @@
 class Wall :public AActor
 {
 public:
+	Wall();
+	virtual	~Wall();
+
 
 };
 
